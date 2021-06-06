@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>AkulaA2</AssemblyName>
+    <RootNamespace>AkulaA2</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Images\bouquet.jpg" />
+    <Content Include="Images\Flower1.jpeg" />
+    <Content Include="Images\Flower2.jpeg" />
+    <Content Include="Images\plant.jpg" />
+    <Content Include="Images\vase.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+
+</Project>

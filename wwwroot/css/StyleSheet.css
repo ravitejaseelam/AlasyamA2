@@ -1,12 +1,12 @@
 ﻿body {
-    background: #CCFFFF;
-    font-family: Verdana;
+    background: url(../Flower1.jpeg) repeat;
+    font-family: auto;
     font-size: medium;
     margin-left: 10px;
 }
 
 .nav {
-    background-color: rosybrown;
+    background-color: black;
     overflow: hidden;
     margin-bottom: 50px;
 }

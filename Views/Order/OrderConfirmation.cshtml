@@ -1,0 +1,36 @@
+﻿@model Sale
+@{
+    ViewData["Title"] = "Order Confirmation";
+}
+
+<div class="flex-detail">
+    <div>
+        Your order has been confirmed for the following :
+        <table>
+            <tr>
+                <td class="td2">Customer Name</td>
+                <td>
+                    @Model.CustomerName
+                </td>
+            </tr>
+            <tr>
+                <td class="td2">Selected Item</td>
+                <td>
+                    @Model.SelectedOption?.Title
+                </td>
+            </tr>
+            <tr>
+                <td class="td2">Price</td>
+                <td>
+                    @Model.SelectedOption?.Price
+                </td>
+            </tr>
+            <tr>
+                <td class="td2">Address</td>
+                <td>
+                    @Model.Address
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

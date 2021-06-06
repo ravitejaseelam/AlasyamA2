@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AlasyamA2.Models
+namespace AkulaA2.Models
 {
     public class Sale
     {
@@ -25,12 +25,10 @@ namespace AlasyamA2.Models
         public double BPrice { get; set; }
      
         [Required(ErrorMessage = "Please select particular Bouquet!")]
-        public List<SelectListItem> Options { get; set; } = new List<SelectListItem>
-        {
-            new SelectListItem { Value = "SB", Text = "Small bouquet" },
-            new SelectListItem { Value = "BV", Text = "Bouquet in vase" },
-            new SelectListItem { Value = "FP", Text = "Flower plant"}
-        };
+        public List<SelectListItem> Options { get; set; }
+
+        public Arrangement SelectedOption { get; set; }
+        public string SelectedOptionId { get; set; }
         public string EventName { get; set; }
 
         public double DCharge { get; set; }

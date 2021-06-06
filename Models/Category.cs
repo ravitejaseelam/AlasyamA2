@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AlasyamA2.Models
+namespace AkulaA2.Models
 {
     public class Category
     {

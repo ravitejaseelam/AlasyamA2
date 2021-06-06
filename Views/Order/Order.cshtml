@@ -1,0 +1,47 @@
+﻿@model Sale
+@{
+    ViewData["Title"] = "Order";
+}
+@using (Html.BeginForm("CreateOrder", "Order", FormMethod.Post))
+{
+<div class="flex-detail">
+    <div>
+        <table>
+            <tr>
+                <td class="td2">Customer Name</td>
+                <td>
+                    @Html.TextBoxFor(model => model.CustomerName, new { @class = "text", required = "required" })
+
+                </td>
+            </tr>
+            <tr>
+                <td class="td2"> Select a Bouquet option: </td>
+                <td>
+                    @Html.DropDownListFor(model => model.SelectedOptionId,Model.Options,"Select One")
+                </td>
+            </tr>
+            <tr>
+                <td class="td2">Message:</td>
+                <td>@Html.TextAreaFor(model => model.Message, new { @class = "text", @maxlength = "30", @rows = 5, @cols = 20 })</td>
+            </tr>
+
+            <tr>
+                <td class="td2"> Check If Bouquet is to Deliver: </td>
+                <td>
+                    <input asp-for="Delivery" />
+                    <label asp-for="Delivery"> Delivery</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="td2">Address:</td>
+                <td><input asp-for="Address" /></td>
+            </tr>
+
+            <tr>
+                <td> </td>
+                <td> <button type="submit">Order</button> </td>
+            </tr>
+        </table>
+    </div>
+</div>
+}

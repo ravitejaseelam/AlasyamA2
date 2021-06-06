@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AlasyamA2
+namespace AkulaA2
 {
     public class Startup
     {

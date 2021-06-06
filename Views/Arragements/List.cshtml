@@ -1,0 +1,34 @@
+﻿@model ListViewModel
+@{
+    ViewData["Title"] = "Arrangements";
+}
+
+<div class="flex-detail">
+    <div>
+        <table class="listTable">
+            <thead>
+                <tr>
+                    <th>@Model.SelectedCategory Events</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            @foreach (var arrangement in Model.Arrangements)
+            {
+        <tr>
+            <td class="td">@arrangement.Title</td>
+            <td class="td">
+                @arrangement.Description
+            </td>
+            <td class="td">
+                <img src="@arrangement.ImageSrc" title="@arrangement.Description"/>
+            </td>
+        </tr>
+            }
+
+        </table>
+
+    </div>
+</div>
+
+

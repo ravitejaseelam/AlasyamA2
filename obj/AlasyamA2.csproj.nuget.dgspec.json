@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\12149\\source\\repos\\AlasyamA2\\AlasyamA2.csproj": {}
+    "D:\\.netprojects\\AlasyamA2\\AlasyamA2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\12149\\source\\repos\\AlasyamA2\\AlasyamA2.csproj": {
+    "D:\\.netprojects\\AlasyamA2\\AlasyamA2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\12149\\source\\repos\\AlasyamA2\\AlasyamA2.csproj",
-        "projectName": "AlasyamA2",
-        "projectPath": "C:\\Users\\12149\\source\\repos\\AlasyamA2\\AlasyamA2.csproj",
-        "packagesPath": "C:\\Users\\12149\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\12149\\source\\repos\\AlasyamA2\\obj\\",
+        "projectUniqueName": "D:\\.netprojects\\AlasyamA2\\AlasyamA2.csproj",
+        "projectName": "AkulaA2",
+        "projectPath": "D:\\.netprojects\\AlasyamA2\\AlasyamA2.csproj",
+        "packagesPath": "C:\\Users\\Sagar Akuthota\\.nuget\\packages\\",
+        "outputPath": "D:\\.netprojects\\AlasyamA2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\12149\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sagar Akuthota\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
