@@ -1,0 +1,88 @@
+﻿body {
+    background: #CCFFFF;
+    font-family: Verdana;
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.nav {
+    background-color: rosybrown;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+    /* Style the links inside the navigation bar */
+    .nav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        /* Change the color of links on hover */
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .nav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+div.static {
+    position: static;
+    width: 200px;
+    height: 200px
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.flex-detail {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.item1 {
+    padding-right: 50px;
+}
+
+.detailTable {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.listTable {
+    margin-left: 10px;
+    border-collapse: collapse;
+}
+
+.td {
+    border: 1px solid;
+    border-color: brown;
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+div {
+    padding: 10px;
+}

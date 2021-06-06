@@ -1,0 +1,35 @@
+﻿@model Event
+@{
+    ViewData["Title"] = "Event Details";
+}
+
+
+<h3>Bouquet Details</h3>
+
+<div class="flex-detail">
+    <div class="static">
+        <img src="~/images/@Model.ImageID"
+             alt="@Model.Title Image" />
+    </div>
+    <div>
+        <b>@Model.Title</b>
+        <table class="detailTable">
+            <tr>
+                <td>Description:</td>
+                <td>@Model.Description</td>
+            </tr>
+            <tr>
+                <td>Bouquet Price:</td>
+                <td>@Model.Price.ToString("C")</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div>
+    <a asp-controller="Cart" asp-action="Buy" asp-route-id="@Model.ID"> Buy Bouquet</a>
+</div>
+
+
+
+
+

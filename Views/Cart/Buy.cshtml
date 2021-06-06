@@ -1,0 +1,53 @@
+﻿@model Sale
+@{
+    ViewData["Title"] = "Buy Bouquet";
+}
+
+<h2>Buy Bouquet</h2>
+
+<form asp-action="Confirmation" method="post">
+    <div asp-validation-summary="All"></div>
+
+    <table>
+        <tr>
+            <td class="td2">Customer Name:</td>
+            <td><input asp-for="CustomerName" /></td>
+        </tr>
+        <tr>
+            <td class="td2"> Email: </td>
+            <td><input asp-for="Email" /></td>
+        </tr>
+        <tr>
+            <td class="td2">Message:</td>
+            <td><input asp-for="Message" /></td>
+        </tr>
+        <tr>
+            <td class="td2"> Select a Bouquet option: </td>
+            <td>
+                <select asp-for="Code" asp-items="Model.Options">
+                    <option value="">Not selected</option>
+                </select>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="td2"> Check If Bouquet is to Deliver: </td>
+            <td>
+                <input asp-for="Delivery" />
+                <label asp-for="Delivery"> Delivery</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="td2">Address:</td>
+            <td><input asp-for="Address" /></td>
+        </tr>
+
+        <tr>
+            <td> </td>
+            <td> <button type="submit">Add to Cart</button> </td>
+        </tr>
+    </table>
+
+
+</form>

@@ -1,0 +1,35 @@
+﻿@model Sale
+@{
+    ViewData["Title"] = "Confirmation";
+}
+
+<h2>Order Confirmation</h2>
+<table>
+
+    <tr>
+        <td class="td2"> Customer Name:</td>
+        <td> @Model.CustomerName</td>
+    </tr>
+
+    <tr>
+        <td class="td2"> Message:</td>
+        <td> @Model.Message</td>
+    </tr>
+    <tr>
+        <td class="td2"> Boquet Type:</td>
+        <td> @Model.GetBouqte()</td>
+    </tr>
+    <tr>
+        <td class="td2"> Delivery Charge:</td>
+        <td> @Model.Price().ToString("C2")</td>
+
+    </tr>
+    <tr>
+        <td class="td2"> Bouquet Price:</td>
+        <td> @Model.GetRate().ToString("C2")</td>
+    </tr>
+    <tr>
+        <td class="td2"> Total Rate:</td>
+        <td> @Model.GetTotal().ToString("C2")</td>
+    </tr>
+</table>

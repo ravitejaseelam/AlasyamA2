@@ -1,0 +1,49 @@
+﻿@model ListViewModel
+@{
+    ViewData["Title"] = "List";
+}
+
+<div class="flex-detail">
+    <div class="item1">
+        <b>Filter by type</b>
+        <div>
+            <a asp-controller="Event" asp-action="List" asp-route-id="All"> All Events </a>
+
+            <!--The loops reads the list of categories and creates a link for each of them -->
+
+            @foreach (Category cat in Model.Categories)
+            {
+                <a asp-controller="Event" asp-action="List" asp-route-id="@cat.Name">
+                    <div>@cat.Name </div>
+                </a>
+            }
+        </div>
+    </div>
+
+    <div>
+        <table class="listTable">
+            <thead>
+                <tr>
+                    <th>@Model.SelectedCategory Events</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            @foreach (var ev in Model.Events)
+            {
+                <tr>
+                    <td class="td">@ev.Title</td>
+                    <td class="td">
+                        <a asp-controller="Event" asp-action="Details"
+                           asp-route-id="@ev.ID">View</a>
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+
+    </div>
+</div>
+
+

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="nav">
+        <a class="active" asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Event" asp-action="List">Events</a>
+        <a asp-controller="Home" asp-action="About">About</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
